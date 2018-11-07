@@ -17,11 +17,10 @@ class ListItem extends Component {
 
     renderDescription() {
         const { library, expanded} = this.props;
-
         if (expanded) {
             return (
                 <CardSection>
-                    <Text style={{flex: 1}}>{library.item.description}</Textstyle>
+                    <Text style={{flex: 1}}>{library.item.description}</Text>
                 </CardSection>
             );
         }
